@@ -10,6 +10,8 @@ ____ ____ _    ____ _  _ _    ____ ___  ____ ____ ____
 [ 2 ] --> Subtração
 [ 3 ] --> Multiplicação
 [ 4 ] --> Divisão
+[ 5 ] --> Exponenciação
+[ 6 ] --> Radiciação
 
 ''')
 
@@ -23,3 +25,7 @@ if conta == 3:
     multiplicacao()
 if conta == 4:
     divisao()
+if conta == 5:
+    exponenciacao()
+if conta == 6:
+    radiciacao()
