@@ -30,3 +30,12 @@ def divisao():
     n1 = float (input('Digite um valor: '))
     n2 = float (input('Digite um valor: '))
     print(f'O resultado é {n1 / n2}')
+
+def exponenciacao():
+    num = int (input('Digite o valor da base: '))
+    exp = int (input('Digite o valor do exponte: '))
+    print(f'O resultado é {num**exp}')
+
+def radiciacao():
+    num = int (input('Digite um número: '))
+    print(f'A raiz quadrada de {num} é {num ** 0.5}')
