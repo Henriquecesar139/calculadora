@@ -39,3 +39,27 @@ def exponenciacao():
 def radiciacao():
     num = int (input('Digite um número: '))
     print(f'A raiz quadrada de {num} é {num ** 0.5}')
+
+def porcentagem():
+    num = int (input('Digite um valor: \n --> '))
+    por = int (input('Digite a porcentagem \n --> '))
+    porc = por / 100
+    print(f'O resultado é {num * porc}')
+
+def permilagem():
+    num = int (input('Digite um valor: \n --> '))
+    per = int (input('Digite a permilagem \n --> '))
+    perm = per / 1000
+    print(f'O resultado é {num * perm}')
+
+def fib():
+    num = int(input('Digite um número de termo para sequência Fibonacci: \n --> '))
+    cont = 1
+    anterior = 0
+    proxima = 1
+    soma = 1
+    for c in range(num):
+        print(anterior, end=' ')
+        soma = proxima + anterior
+        anterior = proxima
+        proxima = soma
