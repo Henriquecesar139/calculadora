@@ -14,7 +14,6 @@ ____ ____ _    ____ _  _ _    ____ ___  ____ ____ ____
 [ 6 ] --> Radiciação
 [ 7 ] --> Porcentagem
 [ 8 ] --> Permilagem
-[ 9 ] --> Sequencia de Fibonacci
 ''')
 
 conta = int (input('---> '))
@@ -40,7 +39,4 @@ if conta == 7:
     (exit())
 if conta == 8:
     permilagem()
-    (exit())
-if conta == 8:
-    fib()
     (exit())
