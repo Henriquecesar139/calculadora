@@ -51,15 +51,3 @@ def permilagem():
     per = int (input('Digite a permilagem \n --> '))
     perm = per / 1000
     print(f'O resultado é {num * perm}')
-
-def fib():
-    num = int(input('Digite um número de termo para sequência Fibonacci: \n --> '))
-    cont = 1
-    anterior = 0
-    proxima = 1
-    soma = 1
-    for c in range(num):
-        print(anterior, end=' ')
-        soma = proxima + anterior
-        anterior = proxima
-        proxima = soma
