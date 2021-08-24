@@ -12,20 +12,35 @@ ____ ____ _    ____ _  _ _    ____ ___  ____ ____ ____
 [ 4 ] --> Divisão
 [ 5 ] --> Exponenciação
 [ 6 ] --> Radiciação
-
+[ 7 ] --> Porcentagem
+[ 8 ] --> Permilagem
+[ 9 ] --> Sequencia de Fibonacci
 ''')
 
 conta = int (input('---> '))
 
 if conta == 1:
     adicao()
+    (exit())
 if conta == 2:
     subtracao()
+    (exit())
 if conta == 3:
     multiplicacao()
 if conta == 4:
     divisao()
+    (exit())
 if conta == 5:
     exponenciacao()
 if conta == 6:
     radiciacao()
+    (exit())
+if conta == 7:
+    porcentagem()
+    (exit())
+if conta == 8:
+    permilagem()
+    (exit())
+if conta == 8:
+    fib()
+    (exit())
