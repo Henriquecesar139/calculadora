@@ -9,4 +9,10 @@
     <li>Arquivo com as funções que realizam os cálculos (calculos.py)</li>
 </ul>
 
-<img src="calculadora.png" alt="foto da calculadora">
+<h3>Calculadora - CLI</h3>
+<img src="img/calculadora.png" alt="foto da calculadora">
+
+<hr>
+
+<h3>Calculadora- GUI</h3>
+<img src="img/calculadora2.png" alt="Foto da calculadora">
