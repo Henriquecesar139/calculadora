@@ -13,6 +13,7 @@ def calcular():
         conta = []
     except:
         conta_lb['text'] = 'E R R O'
+
 def limp():
     global conta
     conta_lb['text'] = ' '
@@ -20,7 +21,7 @@ def limp():
 
 tela = Tk()
 tela.title('Calculadora')
-tela.geometry('350x430')
+tela.geometry('350x500')
 tela.resizable(False, False)
 tela.iconbitmap('img/icon.ico')
 conta = []
@@ -48,7 +49,9 @@ n9 = Button (tela, text = '9', width = 8, height = 4, command = lambda : num(n9)
 
 n0 = Button (tela, text = '0', width = 8, height = 4, command = lambda : num(n0))
 
-result = Button (tela, text = '=', width = 8, height = 4, fg = 'white', bg = 'red', command = calcular)
+ponto = Button(tela, text = '.', width = 8, height = 4, command = lambda : num(ponto))
+
+result = Button (tela, text = '=', width = 20, height = 4, fg = 'white', bg = 'red', command = calcular)
 
 limpar = Button (tela, text = 'C', width = 8, height = 4, fg = "white", bg = "black", command = limp)
 
@@ -59,6 +62,10 @@ sub = Button(tela, text = '-', width = 8, height = 4, command = lambda : num(sub
 mult = Button(tela, text = '*', width = 8, height = 4, command = lambda : num(mult))
 
 div = Button(tela, text = '/', width = 8, height = 4, command = lambda : num(div))
+
+p1 = Button(tela, text = '(', width = 8, height = 4, command = lambda : num(p1))
+
+p2 = Button(tela, text = ')', width = 8, height = 4, command = lambda : num(p2))
 
 #Posicionamento
 n1.place(x = 10, y = 100)
@@ -81,7 +88,9 @@ n9.place(x = 170, y = 260)
 
 n0.place(x = 10, y = 340)
 
-result.place(x = 170,y = 340)
+ponto.place(x = 170, y = 340)
+
+result.place(x = 170,y = 420)
 
 limpar.place(x = 90, y = 340)
 
@@ -95,5 +104,8 @@ mult.place(x = 260, y = 260)
 
 div.place(x = 260, y = 340)
 
+p1.place(x = 10, y = 420)
+
+p2.place(x = 90, y = 420)
 
 tela.mainloop()
