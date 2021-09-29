@@ -5,8 +5,15 @@ from tkinter import *
 #Captura o texto de um botão e coloca dentro da lista conta
 def num(numero):
     numero = numero['text']
-    conta.append(numero)
-    conta_lb['text'] = conta
+    if numero == 'X':
+        conta.append('*')
+        conta_lb['text'] = conta
+    elif numero == '÷':
+        conta.append('/')
+        conta_lb['text'] = conta
+    else:
+        conta.append(numero)
+        conta_lb['text'] = conta
 
 #Pega os valores da lista e faz os cálculos
 def calcular():
@@ -27,8 +34,8 @@ def limp():
 tela = Tk()
 tela.title('Calculadora')
 tela.geometry('350x500')
-tela.resizable(False, False)
-tela.iconbitmap('img/icon.ico')
+tela.resizable(True, False)
+#tela.iconbitmap('img/icon.ico')
 conta = []
 
 #Botões, Label e posicionamento
@@ -81,10 +88,10 @@ soma.place(x = 260, y = 100)
 sub = Button(tela, text = '-', width = 8, height = 4, command = lambda : num(sub))
 sub.place(x = 260, y = 180)
 
-mult = Button(tela, text = '*', width = 8, height = 4, command = lambda : num(mult))
+mult = Button(tela, text = 'X', width = 8, height = 4, command = lambda : num(mult))
 mult.place(x = 260, y = 260)
 
-div = Button(tela, text = '/', width = 8, height = 4, command = lambda : num(div))
+div = Button(tela, text = '÷', width = 8, height = 4, command = lambda : num(div))
 div.place(x = 260, y = 340)
 
 p1 = Button(tela, text = '(', width = 8, height = 4, command = lambda : num(p1))
