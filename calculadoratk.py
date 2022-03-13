@@ -35,7 +35,6 @@ tela = Tk()
 tela.title('Calculadora')
 tela.geometry('350x500')
 tela.resizable(True, False)
-#tela.iconbitmap('img/icon.ico')
 conta = []
 
 #Botões, Label e posicionamento
