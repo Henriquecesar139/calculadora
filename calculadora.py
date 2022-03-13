@@ -1,7 +1,7 @@
-from math import *
+from os import system
+from formulas import *
 
-def calcular(conta):
-    return eval(conta)
+system('clear')
 
 
 print('''
@@ -28,4 +28,4 @@ ____ ____ _    ____ _  _ _    ____ ___  ____ ____ ____
 
 while True:
     conta = input('[conta]==-> ')
-    print(calcular(conta))
+    print(eval(conta))
